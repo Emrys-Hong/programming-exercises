@@ -1,8 +1,8 @@
 Design an efficient algorithm to determine if# a positive integer N is a prime number. Your code must be able to process large N values (above half billion) under 20 seconds.
-'''python
+```python
 def is_prime(N):
     return N > 1 and all(N % i for i in range(2, int(N**.5), 2)) # check only till the nearest square root of N; skipping all even numbers.
-'''
+```
 #########################################################################
 question 2
 Design an efficient algorithm that determines the number of ways 5 non-negative integers can sum up to N. Your code must be able to handle large N values (150+) under 20 seconds. 

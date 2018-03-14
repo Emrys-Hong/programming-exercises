@@ -7,5 +7,5 @@ Design an efficient algorithm to determine if# a positive integer N is a prime n
 
 #########################################################################
 question 2
-Design an efficient algorithm that determines the number of ways 5 non-negative integers can sum up to N. Your code must be able to handle large N values (150+) under 20 seconds. 
+Design an efficient algorithm that determines the `number` of ways 5 non-negative integers can sum up to N. Your code must be able to handle large N values (150+) under 20 seconds. 
 

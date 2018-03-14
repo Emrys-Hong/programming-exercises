@@ -45,3 +45,7 @@ def nos(n, x = 5):
             for j in range(n):
                 solutions += nos(j, i)
         return solutions
+####method 3
+from scipy.special import comb
+def nos(n, x=5):
+ return comb(n+x-1 , x-1, exact=False, repetition=False)

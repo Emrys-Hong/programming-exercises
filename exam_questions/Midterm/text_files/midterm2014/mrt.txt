@@ -1,0 +1,5 @@
+EW Line (Green), Pasir Ris, Tampines, Simei, Tanah Merah, Bedok
+Circle Line (Yellow), Dhoby Ghaut, Museum, Convention Center, Millenia
+NS Line (Red), Jurong East, Bukit Batok, Bukit Gombak, Choa Chu Kang
+NE Line (Purple), Harbour Front, Outram Park, China Town, Clark Quay, Doby Ghaut
+Downtown Line (Blue), Chinatown, Telok Ayer, Downtown, Bayfront, Promenate, Bugis

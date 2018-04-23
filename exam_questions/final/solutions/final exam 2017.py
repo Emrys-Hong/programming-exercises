@@ -79,7 +79,7 @@ class Parallelogram:
         self.side2 = side2
         self.diagonal = diagonal
     def __str__(self):
-        return str(round(float(self.diagonal*1.00),2))
+        return str(round(float(self.diagonal),2))
 
     def getter(self):
         return self._diagonal
@@ -102,7 +102,7 @@ class Parallelogram:
 
 class Rectangle(Parallelogram):
     def __call__(self):
-        if (self.side1+self.side2)**0.5 == self.diagonal:
+        if (self.side1**2+self.side2**2)**0.5 == self.diagonal:
             return True
         else:
             return False
@@ -114,7 +114,7 @@ class Rhombus(Parallelogram):
             return False
 class Square(Parallelogram):
     def __call__(self):
-        if (self.side2 == self.side1) and (self.side1+self.side2>self.diagonal) and ((self.side1**2+self.side2**2)**0.5==self.diagonal):
+        if (self.side2 == self.side1) and ((self.side1**2+self.side2**2)**0.5==self.diagonal):
             return True
         else:
             return False
@@ -130,8 +130,10 @@ class MyTask(object):
         self.duration = duration
 assignments = [MyTask(14,10),MyTask(33,2),MyTask(14,1),MyTask(10,2),MyTask(5,3)]
 assignments2 = [MyTask(3,2),MyTask(3,2)]
+
 def getkey(mytask):
     return mytask.deadline
+
 def procrastination(assignments):
     assignments = sorted(assignments,key=getkey,reverse=True)
     print([getkey(i) for i in assignments])
@@ -141,7 +143,7 @@ def procrastination(assignments):
             time = task.deadline - task.duration
         else:
             time = time - task.duration
-        print(time)
+    time = -1 if time < 0 else time
     return time
 
 

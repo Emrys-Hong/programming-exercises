@@ -1,0 +1,84 @@
+a)
+
+read name
+read student ID
+read quiz score
+read project score 
+read final score
+
+calculate average
+
+print name
+print student ID
+print average
+
+b)
+
+read name
+read student ID
+read quiz score
+read project score 
+read final score
+
+calculate average
+
+print name
+print student ID
+print average
+
+if avg >= 50:
+    print ("Pass")
+else:
+    print ("Fail")
+
+c)
+
+read name
+read student ID
+read quiz score
+read project score 
+read final score
+
+calculate average
+
+print name
+print student ID
+print average
+
+if avg >= 90:
+    print ('Grade:',"A")
+elif avg >= 80:
+    print ('Grade:',"B")
+elif avg >= 70:
+    print ('Grade:',"C")
+elif avg >= 60:
+    print ('Grade:',"D")
+elif avg < 60:
+    print ('Grade:',"F")
+
+
+
+d)
+for A in range(40):
+	read name
+	read student ID
+	read quiz score
+	read project score 
+	read final score
+
+	calculate average
+
+	print name
+	print student ID
+	print average
+
+	if avg >= 90:
+    		print ('Grade:',"A")
+	elif avg >= 80:
+    		print ('Grade:',"B")
+	elif avg >= 70:
+   		print ('Grade:',"C")
+	elif avg >= 60:
+   		print ('Grade:',"D")
+	elif avg < 60:
+    		print ('Grade:',"F")

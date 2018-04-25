@@ -1,0 +1,3 @@
+1a) Widgets are the elements that make up a GUI. They include: buttons, cavas, entry, scrollbars, and frames. Widgets are used to arrange and create a GUI that you wish to present to the user.
+
+2a) A value of k can be 0.5. k should be a positive number. This is because when the robot is further than dDesired from the wall (dDesired-inp > 0), it should move forward. When it is too close to the wall (dDesired - inp < 0) it should move backwards. A positive value of k will allow this.

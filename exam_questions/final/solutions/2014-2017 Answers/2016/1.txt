@@ -1,0 +1,14 @@
+a) App.build() runs the build method within your app class (subclass of App). The method sets up the layout of the screen, and arranges all the widgets required accordingly. It returns the root widget, which is the widget that will be displayed when the particular app is run. If multiple widgets are to be added, they should be added into the root widget.
+
+b) The .bind() method is used when you wish to monitor changes to a property. The argument of the bind method is property_name=function_name, where property_name is the name of the property you wish to monitor, and function_name is the name of the function that will be called when the value of property_name changes.
+
+c) Classes required: ScreenManager, Screen, App
+
+A ScreenManager instance, and multiple Screen instances (2 or more) are instantiated in the build() function of the App instance. The Screen instances are added to the ScreenManager as widgets, and the ScreenManager instance is returned as the root widget of the App instance.
+_____
+|App|
+ ---
+  |
+  SM------
+  |       \
+ Screen1  Screen2
